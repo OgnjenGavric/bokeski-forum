@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <title>Hvala Vam | Bokeški Forum</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+      <header class="header" id="header">
+        <nav class="nav container">
+          <a href="index.html" class="nav__logo">Bokeški Forum</a>
+          <div class="nav__menu">
+              <ul class="nav__list">
+                  <li class="nav__item">
+                      <a href="index.html" class="nav__link active-link">
+                          <i class='bx bx-home-alt'></i>
+                      </a>
+                  </li>
+                  <li class="nav__item">
+                      <a href="#skills" class="nav__link">
+                          <i class='bx bx-book'></i>
+                      </a>
+                  </li>
+                  <li class="nav__item">
+                      <a href="#work" class="nav__link">
+                          <i class='bx bx-briefcase-alt-2'></i>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          <i class='bx bx-moon change__theme' id="theme-button"></i>
+        </nav>
+      </header>
+
+    <!--=============== MAIN ===============-->
+    <main id="main" class="main">
+
+      <!--=============== HOME ===============-->
+        <section class="home section" id="skills">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">Poštovani/a,</span>
+                    <h1 class="home__greeting"><em>Hvala Vam na prijavi.</em></h1>
+                    <h3 class="home__greeting">Biće nam čast i zadovoljstvo da nam se pridružite i radite sa nama.</h3>
+                    <h3 class="home__greeting">Iz našeg tima će Vas uskoro kontaktirati.</h3>
+                    <h3 class="home__name">Vaš Bokeški Forum</h3>
+                    <img src="./assets/img/logo/Bokeski-Forum-logo.jpg" alt="Bokeški Forum" class="about__img-2">
+                </div>
+                <div class="home__social">
+                <a href="https://www.facebook.com/bokeskiforum12/" target="_blank" class="home__social-link">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="https://www.instagram.com/bokeski_forum_/" target="_blank" class="home__social-link">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="https://twitter.com/Bokeski_Forum" target="_blank" class="home__social-link">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                </div>
+                <a href="#contact" class="home__scroll">
+                    <i class='bx bx-phone'></i>
+                    <span class="home__scroll-name">Kontakt</span>
+                </a>
+                <div class="video__description">
+                    <a href="index.html" class="button footer__link">POČETNA STRANA</a>
+                </div>
+            </div>
+            
+        </section>      
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">
+                <em>Bokeški Forum</em>
+            </h1>
+            <ul class="footer__list">
+                <li>
+                    <a href="video-zapisi.html" class="button footer__link">Video zapisi</a>
+                </li>
+                <li>
+                    <a href="Andrija-Petkovic.html" class="button footer__link">dr Andrija Petković</a>
+                </li>
+                <li>
+                    <a href="istorija-bokeljske-mornarice.html" class="button footer__link">Bokeljska mornarica</a>
+                </li>
+            </ul>
+            <ul class="footer__socijal">
+                <a href="https://www.facebook.com/bokeskiforum12/" target="_blank" class="footer__socijal-link">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="https://www.instagram.com/bokeski_forum_/" target="_blank" class="footer__socijal-link">
+                    <i class='bx bxl-instagram' ></i>
+                </a>
+                <a href="https://twitter.com/Bokeski_Forum" target="_blank" class="footer__socijal-link">
+                    <i class='bx bxl-twitter' ></i>
+                </a>
+            </ul>
+            <div class="footer__copy">
+               <span> &#169; <script>document.write(new Date().getFullYear());</script> Sva prava zadržava Bokeški Forum</span>
+               <span><a href="./politika-privatnosti.html">Pravila o privatnosti</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="./assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="./assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./assets/js/main.js"></script>
+
+    <!--==================== FB SHARE ====================-->
+    <script>
+        var fbButton = document.getElementById('fb-share-button')
+        var url = window.location.href
+  
+        fbButton.addEventListener('click', function () {
+          window.open(
+            'https://www.facebook.com/sharer/sharer.php?u=' + url,
+            'facebook-share-dialog',
+            'width=800,height=600'
+          )
+          return false
+        })
+    </script>
+  </body>
+</html>
